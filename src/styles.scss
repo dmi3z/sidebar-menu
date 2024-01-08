@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/fonts/fonts.scss";
+@import "./theme.scss";
+// @import "variables.scss";
+// @import "mixins.scss";
+
+// mat-paginator {
+//   .mat-select {
+//     width: 35px !important;
+//   }
+// }
+
+// body {
+//   margin: 0;
+// }
+
+// .breadcrumbs {
+//   font-size: 18px;
+//   color: $base-muted-color;
+
+//   &_active {
+//     color: $link-color;
+//     cursor: pointer;
+//   }
+// }
+
+// .btn-cancel {
+//   background: $base-color;
+//   color: white;
+//   max-width: 250px;
+//   width: auto;
+// }
+
+// .btn-approve {
+//   background: $active-color;
+//   color: white !important;
+//   margin-left: 10px !important;
+//   max-width: 250px;
+//   width: auto;
+// }
+
+// .content {
+//   padding: 10px 15px;
+//   box-sizing: border-box;
+//   font-family: "Roboto Regular", sans-serif;
+//   position: relative;
+// }
+
+// .controls {
+//   @include flexMix(space-between);
+//   width: 100%;
+//   margin-top: 50px;
+//   margin-bottom: 15px;
+// }
+
+// .tabs {
+//   margin-top: 20px;
+// }
+
+// .form {
+//   @include flexMix($align: flex-start, $direction: column);
+//   margin-top: 40px;
+//   padding-left: 20px;
+// }
+
+// .snackbar-error {
+//   background: $error-color;
+//   font-weight: bold;
+// }
+
+// .snackbar-notify {
+//   background: $active-color;
+//   font-weight: bold;
+// }
+
+// .actions {
+//   margin-top: 30px;
+// }
+
+// .search {
+//   position: absolute;
+//   right: 3px;
+//   top: 12px;
+//   cursor: pointer;
+// }
+
+// .delete {
+//   position: absolute;
+//   right: -30px;
+//   top: 12px;
+//   cursor: pointer;
+// }
+
+// .field {
+//   @include interactiveComponent;
+//   text-overflow: ellipsis;
+//   padding-right: 15px;
+//   box-sizing: border-box !important;
+//   height: 38px !important;
+//   padding-left: 7px !important;
+//   border-radius: 2px;
+
+//   &_with-search {
+//     padding-right: 30px !important;
+//   }
+// }
+
+// .checkbox {
+//   margin-bottom: 15px;
+// }
+
+// .mat-form-field-appearance-legacy .mat-form-field-label {
+//   top: 2.15em;
+//   left: 0.5em;
+// }
+
+// .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float
+//   .mat-form-field-label,
+// .mat-form-field-appearance-legacy.mat-form-field-can-float
+//   .mat-input-server:focus
+//   + .mat-form-field-label-wrapper
+//   .mat-form-field-label {
+//   transform: translateY(-2.2em) translateX(-0.5em) scale(0.75)
+//     perspective(100px) translateZ(0.001px) !important;
+// }
+
+// .label {
+//   color: gray;
+//   font-size: 12px;
+// }
+
+// .mat-button-disabled {
+//   background: grey;
+// }

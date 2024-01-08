@@ -1,0 +1,35 @@
+@import "/src/variables.scss";
+
+@mixin flexMix($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin interactiveComponent {
+  border: 1px solid $border-color !important;
+  color: $base-contrast-color;
+
+  i {
+    color: $base-contrast-color;
+  }
+
+  &:hover {
+    border-color: black !important;
+
+    i {
+      color: black;
+    }
+  }
+
+  &:focus {
+    border-color: $link-color;
+    box-shadow: 0px 0px 4px 3px #368ac04d;
+  }
+
+  &:focus-within {
+    border-color: $link-color;
+    box-shadow: 0px 0px 4px 3px #368ac04d;
+  }
+}

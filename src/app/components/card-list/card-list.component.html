@@ -1,0 +1,5 @@
+<div class="content">
+    @for (item of cards$ | async; track item.id) {
+    <app-card [applicationCard]="item"></app-card>
+    }
+</div>

@@ -1,0 +1,11 @@
+@if(applicationCard.children) {
+<div class="card" [class]="applicationCard.color" (click)="expandMenu()">
+    <i class="material-icons card__icon">{{ applicationCard.icon }}</i>
+    <span class="card__name">{{ applicationCard.name }}</span>
+</div>
+} @else {
+<div class="card" [class]="applicationCard.color" [routerLink]="applicationCard.url">
+    <i class="material-icons card__icon">{{ applicationCard.icon }}</i>
+    <span class="card__name">{{ applicationCard.name }}</span>
+</div>
+}

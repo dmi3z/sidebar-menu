@@ -1,0 +1,2168 @@
+@import "./variables.scss";
+
+.mat-header-row {
+  background: $base-color;
+  height: 35px !important;
+}
+
+.mat-sort-header-content {
+  color: white;
+}
+
+.mat-row {
+  background: white;
+  position: relative;
+}
+
+.mat-paginator {
+  background: white;
+  color: $base-color !important;
+  background: rgb(231, 230, 230);
+}
+
+.mat-select-value {
+  color: $base-color;
+}
+
+.mat-select-arrow {
+  color: $base-color;
+}
+
+.mat-paginator-icon {
+  color: $base-color;
+}
+
+.mat-select-panel {
+  background: $base-muted-color;
+}
+
+.mat-selected {
+  color: $base-color !important;
+}
+
+.mat-dialog-container {
+  color: $base-color;
+  padding: 24px 40px !important;
+
+  @media screen and (max-width: 640px) {
+    padding: 10px 15px !important;
+  }
+}
+
+.mat-button {
+  background: $base-muted-color;
+}
+
+.mat-tab-label-active {
+  border-bottom: 3px solid $active-color;
+}
+
+.mat-tab-label-content {
+  font-family: "Roboto Bold", sans-serif;
+}
+
+.mat-form-field-underline {
+  display: none !important;
+  background-color: $base-muted-color !important;
+}
+
+.mat-form-field-ripple {
+  background-color: $base-color !important;
+}
+
+.mat-tab-label {
+  color: $base-color;
+}
+
+.mat-tab-labels {
+  border-bottom: 1px solid $base-text-color;
+}
+
+.mat-ink-bar {
+  background-color: $base-color !important;
+  display: none !important;
+}
+
+.mat-input-element {
+  color: $base-color !important;
+}
+
+.mat-checkbox-checked {
+  .mat-checkbox-background {
+    background: $active-color !important;
+  }
+}
+
+.mat-checkbox-frame {
+  border: 2px solid $base-muted-color;
+  border-radius: 2px;
+}
+
+.mat-checkbox-indeterminate {
+  .mat-checkbox-background {
+    background-color: $active-color !important;
+  }
+}
+
+.mat-focused .mat-form-field-required-marker {
+  color: $base-muted-color;
+}
+
+.mat-form-field-flex {
+  background: transparent !important;
+  padding-left: 0 !important;
+  width: 300px !important;
+}
+
+.mat-datepicker-actions {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100%;
+}
+
+.mat-cell {
+  text-align: center;
+  justify-content: center;
+  border: 1px solid $base-text-color;
+  box-sizing: border-box;
+  border-right: none;
+  border-bottom-width: 0px !important;
+  border-bottom-style: none !important;
+  color: $base-color;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px !important;
+
+  &:first-of-type {
+    padding-left: 0 !important;
+  }
+
+  &:last-of-type {
+    border-right: 1px solid $base-text-color;
+  }
+}
+
+.mat-sort-header-content {
+  padding-left: 12px;
+}
+
+.mat-sort-header-container {
+  justify-content: center;
+}
+
+.mat-header-cell {
+  text-align: center !important;
+  border-bottom-width: 0px;
+  border-right: 1px solid $base-muted-color;
+  border-bottom-style: none;
+  flex-direction: column;
+  justify-content: center;
+
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.mat-header-cell:first-of-type {
+  padding-left: 0 !important;
+}
+
+.textarea {
+  textarea {
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    resize: none;
+    height: 200px;
+  }
+
+  .mat-form-field-underline {
+    display: none;
+  }
+}
+
+.mat-select-trigger {
+  height: 100%;
+}
+
+.mat-step-icon-selected {
+  background-color: $link-color !important;
+}
+
+.mat-step-icon-state-edit {
+  background-color: $active-color !important;
+}
+
+// COLORS
+
+.b-orange {
+  background: #fe781e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-orange {
+  color: #fe781e;
+}
+
+.b-orange:hover {
+  background: #bf5b18;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-purple {
+  background: #9b59bb;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-purple {
+  color: #9b59bb;
+}
+
+.b-purple:hover {
+  background: #603775;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-blue {
+  background: #1570a6;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-blue {
+  color: #1570a6;
+}
+
+.b-blue:hover {
+  background: #0c4668;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-green {
+  background: #41bb19;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-green {
+  color: #41bb19;
+}
+
+.b-green:hover {
+  background: #297510;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-black {
+  background: #3f3f3f;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-black {
+  color: #3f3f3f;
+}
+
+.b-black:hover {
+  background: #000000;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-lblue {
+  background: #1ba1e2;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-lblue:hover {
+  background: #126e99;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-red {
+  background: #ff3738;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-red {
+  color: #ff3738;
+}
+
+.b-red:hover {
+  background: #bc292b;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-sunflower {
+  background: #f1c40f;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-sunflower {
+  color: #f1c40f;
+}
+
+.b-sunflower:hover {
+  background: #b2910c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-emerland {
+  background: #2ecc71;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-emerland {
+  color: #2ecc71;
+}
+
+.b-emerland:hover {
+  background: #1d7f46;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-amethyst {
+  background: #9b59b6;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-amethyst {
+  color: #9b59b6;
+}
+
+.b-amethyst:hover {
+  background: #563166;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-belizehole {
+  background: #2980b9;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-belizehole {
+  color: #2980b9;
+}
+
+.b-belizehole:hover {
+  background: #174766;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-asbestos {
+  background: #7f8c8d;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.t-asbestos {
+  color: #7f8c8d;
+}
+
+.b-asbestos:hover {
+  background: #454c4c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-turquoise {
+  background: #1abc9c;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-turquoise:hover {
+  background: #10725f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-peterriver {
+  background: #3498db;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-peterriver:hover {
+  background: #21618c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-wetasphalt {
+  background: #34495e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-greensea {
+  background: #16a085;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-nephritis {
+  background: #27ae60;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-wisteria {
+  background: #8e44ad;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-midnightblue {
+  background: #2c3e50;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-carrot {
+  background: #e67e22;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-alizarin {
+  background: #e74c3c;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-clouds {
+  background: #ecf0f1;
+  color: #999;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-clouds h1,
+.b-clouds h2,
+.b-clouds h3,
+.b-clouds h4,
+.b-clouds h5,
+.b-clouds h6 {
+  color: #999 !important;
+}
+
+.b-concrete {
+  background: #95a5a6;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-buttercup {
+  background: #f39c12;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-pumpkin {
+  background: #d35400;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-pomegranate {
+  background: #c0392b;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-silver {
+  background: #bdc3c7;
+  color: #3f3f3f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.b-silver h1,
+.b-silver h2,
+.b-silver h3,
+.b-silver h4,
+.b-silver h5,
+.b-silver h6 {
+  color: #3f3f3f !important;
+}
+
+.b-wetasphalt:hover {
+  background: #222f3d;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-greensea:hover {
+  background: #0e6654;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-nephritis:hover {
+  background: #145931;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-wisteria:hover {
+  background: #482359;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-midnightblue:hover {
+  background: #1d2935;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-carrot:hover {
+  background: #b2611a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-alizarin:hover {
+  background: #b2392e;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-clouds:hover {
+  background: #aeb1b2;
+  color: #999;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-concrete:hover {
+  background: #677272;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-buttercup:hover {
+  background: #bf780f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-pumpkin:hover {
+  background: #993a00;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-pomegranate:hover {
+  background: #8c2920;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-silver:hover {
+  background: #919599;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-amber {
+  background: #ca6924;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-amber:hover {
+  background: #8d4919;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-amur-cork-tree {
+  background: #f3c13a;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-amur-cork-tree:hover {
+  background: #aa8728;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-bellflower-color {
+  background: #5d3f6a;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-bellflower-color:hover {
+  background: #412c4a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-brewed-mustard-brown {
+  background: #e68364;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-brewed-mustard-brown:hover {
+  background: #a15b46;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-bright-golden-yellow {
+  background: #ffa400;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-bright-golden-yellow:hover {
+  background: #b27200;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-cararra {
+  background: #f2f1ef;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-cararra:hover {
+  background: #a9a8a7;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-cascade {
+  background: #95a5a6;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-cascade:hover {
+  background: #687374;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-cherry-blossom-color {
+  background: #fcc9b9;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-cherry-blossom-color:hover {
+  background: #b08c81;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-chestnut-rose {
+  background: #d24d57;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-chestnut-rose:hover {
+  background: #93353c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-cochineal-red {
+  background: #9d2933;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-cochineal-red:hover {
+  background: #6d1c23;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-corn-colored {
+  background: #faa945;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-corn-colored:hover {
+  background: #af7630;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-cream-can {
+  background: #f5d76e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-cream-can:hover {
+  background: #ab964d;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-dodger-blue {
+  background: #19b5fe;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-dodger-blue:hover {
+  background: #117eb1;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-ecstasy {
+  background: #f9690e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-ecstasy:hover {
+  background: #ae4909;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-edward {
+  background: #abb7b7;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-edward:hover {
+  background: #778080;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-egg-colored {
+  background: #ffa631;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-egg-colored:hover {
+  background: #b27422;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-eucalyptus {
+  background: #26a65b;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-eucalyptus:hover {
+  background: #1a743f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-floral-leaf-colored {
+  background: #ffb94e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-floral-leaf-colored:hover {
+  background: #b28136;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-foreign-crimson {
+  background: #c91f37;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-foreign-crimson:hover {
+  background: #8c1526;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-free-speech-aquamarine {
+  background: #03a678;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-free-speech-aquamarine:hover {
+  background: #027454;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-fresh-onion {
+  background: #5b8930;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-fresh-onion:hover {
+  background: #3f5f21;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-gallery {
+  background: #eeeeee;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-gallery:hover {
+  background: #a6a6a6;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-gamboge {
+  background: #ffb61e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-gamboge:hover {
+  background: #b27f15;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-golden-fallen-leaves {
+  background: #e29c45;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-golden-fallen-leaves:hover {
+  background: #9e6d30;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-gossip {
+  background: #87d37c;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-gossip:hover {
+  background: #5e9356;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-green-bamboo {
+  background: #006442;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-green-bamboo:hover {
+  background: #00281a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-hanada {
+  background: #044f67;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-hanada:hover {
+  background: #011f29;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-harbor-rat {
+  background: #757d75;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-harbor-rat:hover {
+  background: #515751;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-ibis-wing-color {
+  background: #f58f84;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-ibis-wing-color:hover {
+  background: #ab645c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-indigo-color {
+  background: #264348;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-indigo-color:hover {
+  background: #0f1a1c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-iris-color {
+  background: #763568;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-iris-color:hover {
+  background: #522548;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-japanese-triandra-grass {
+  background: #e2b13c;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-japanese-triandra-grass:hover {
+  background: #9e7b2a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-jordy-blue {
+  background: #89c4f4;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-jordy-blue:hover {
+  background: #5f89aa;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-jungle-green {
+  background: #26c281;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-jungle-green:hover {
+  background: #1a875a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-lapis-lazuli-color {
+  background: #1f4788;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-lapis-lazuli-color:hover {
+  background: #15315f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-light-blue-color {
+  background: #48929b;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-light-blue-color:hover {
+  background: #32666c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-light-wisteria {
+  background: #be90d4;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-light-wisteria:hover {
+  background: #856494;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-lightning-yellow {
+  background: #f5ab35;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-lightning-yellow:hover {
+  background: #ab7725;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-lynch {
+  background: #6c7a89;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-lynch:hover {
+  background: #4b555f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-medium-crimson {
+  background: #c93756;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-medium-crimson:hover {
+  background: #8c263c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-medium-purple {
+  background: #bf55ec;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-medium-purple:hover {
+  background: #853ba5;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-monza {
+  background: #cf000f;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-monza:hover {
+  background: #90000a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-mountain-meadow {
+  background: #16a085;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-mountain-meadow:hover {
+  background: #0f705d;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-navy-blue-color {
+  background: #003171;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-navy-blue-color:hover {
+  background: #001838;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-observatory {
+  background: #049372;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-observatory:hover {
+  background: #02664f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-ocean-green {
+  background: #4daf7c;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-ocean-green:hover {
+  background: #357a56;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-patina {
+  background: #407a52;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-patina:hover {
+  background: #2c5539;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-patrinia-flowers {
+  background: #d9b611;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-patrinia-flowers:hover {
+  background: #977f0b;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-peach-colored {
+  background: #f47983;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-peach-colored:hover {
+  background: #c36068;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-picton-blue {
+  background: #22a7f0;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-picton-blue:hover {
+  background: #1774a8;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-malibu {
+  background: #66b7e1;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-malibu:hover {
+  background: #47809d;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-porcelain {
+  background: #ecf0f1;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-porcelain:hover {
+  background: #a5a8a8;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-pumice {
+  background: #d2d7d3;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-pumice:hover {
+  background: #939693;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-pure-crimson {
+  background: #c3272b;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-pure-crimson:hover {
+  background: #881b1e;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-radical-red {
+  background: #f62459;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-radical-red:hover {
+  background: #ac193e;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-rapeseed-oil-colored {
+  background: #a17917;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-rapeseed-oil-colored:hover {
+  background: #705410;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-red-orange {
+  background: #dc3023;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-red-orange:hover {
+  background: #9a2118;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-red-plum-colored {
+  background: #db5a6b;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-red-plum-colored:hover {
+  background: #993e4a;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-ripe-lemon {
+  background: #f7ca18;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-ripe-lemon:hover {
+  background: #c5a113;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-saffron {
+  background: #f4d03f;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-saffron:hover {
+  background: #c3a632;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-scarlet {
+  background: #cf3a24;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-scarlet:hover {
+  background: #902819;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-silver-sand {
+  background: #bdc3c7;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-silver-sand:hover {
+  background: #979c9f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-siskin-sprout-yellow {
+  background: #7a942e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-siskin-sprout-yellow:hover {
+  background: #556720;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-sky-color {
+  background: #4d8fac;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-sky-color:hover {
+  background: #356478;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-steel-blue {
+  background: #4b77be;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-steel-blue:hover {
+  background: #345385;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-studio {
+  background: #8e44ad;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-studio:hover {
+  background: #632f79;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-sumac-dyed {
+  background: #e08a1e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-sumac-dyed:hover {
+  background: #9c6015;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-tatarian-aster-color {
+  background: #8d608c;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-tatarian-aster-color:hover {
+  background: #624362;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-thin-color {
+  background: #a87ca0;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-thin-color:hover {
+  background: #755670;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-thousand-herb {
+  background: #317589;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-thousand-herb:hover {
+  background: #22515f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-true-red {
+  background: #8f1d21;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-true-red:hover {
+  background: #641417;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-ultramarine-color {
+  background: #5d8cae;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-ultramarine-color:hover {
+  background: #416279;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-violet-color {
+  background: #5b3256;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-violet-color:hover {
+  background: #3f233c;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-washed-out-crimson {
+  background: #ffb3a7;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-washed-out-crimson:hover {
+  background: #cc8f85;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-wisteria {
+  background: #9b59b6;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-wisteria:hover {
+  background: #6c3e7f;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-wisteria-color {
+  background: #89729e;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-wisteria-color:hover {
+  background: #5f4f6e;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-wisteria-purple {
+  background: #875f9a;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-wisteria-purple:hover {
+  background: #5e426b;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-young-bamboo-color {
+  background: #6b9362;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-young-bamboo-color:hover {
+  background: #4a6644;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.b-young-green-onion {
+  background: #8db255;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: default;
+}
+
+.b-young-green-onion:hover {
+  background: #627c3b;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}

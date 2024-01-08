@@ -1,0 +1,57 @@
+.sidebar-item {
+    position: relative;
+    user-select: none;
+
+    &__wrapper {
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        padding: 12px 16px;
+        overflow: hidden;
+
+        &:hover {
+            background-color: #323232;
+            transition: 0.3s;
+        }
+
+        &.active {
+            background-color: #323232;
+            transition: 0.3s;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        max-height: 30px;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    span {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+
+        &.opened {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__childrens {
+        width: 100%;
+    }
+}

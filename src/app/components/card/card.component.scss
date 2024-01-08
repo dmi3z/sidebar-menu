@@ -1,0 +1,39 @@
+@mixin flexMix($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.card {
+  @include flexMix($direction: column);
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+  // color: black;
+  font-family: "Roboto Regular", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+  border: 1px solid #b7b7ba;
+
+  &__icon {
+    font-size: 40px;
+    width: 40px;
+    height: 30px;
+  }
+
+  &__name {
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px 0 rgba($color: black, $alpha: 0.7);
+  }
+}

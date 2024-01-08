@@ -1,0 +1,19 @@
+<div class="with-sidebar">
+    @if (parameters.sidebar) {
+    <div class="nav" #navRef>
+        @for(item of navItems; track $index) {
+        <app-sidebar-item
+            [item]="item"
+            [activeUrl]="activeUrl"
+            (itemSelected)="loadItemChild($event)"
+        ></app-sidebar-item>
+        }
+
+        <div class="resizer" #resizer (mousedown)="startResizing($event)"></div>
+    </div>
+    } @if (parameters.cards) {
+    <div class="content" #contentRef>
+        <ng-content></ng-content>
+    </div>
+    }
+</div>
